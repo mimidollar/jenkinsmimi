@@ -1,265 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bienvenue Stay France</title>
-  <meta name="description" content="Premium Airbnb hosting and vacation stays in France. Discover charming apartments, easy booking, and unforgettable experiences." />
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
-
-    body {
-      line-height: 1.6;
-      color: #333;
-      background: #f8f8f8;
-    }
-
-    header {
-      background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
-        url('https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
-      color: white;
-      min-height: 90vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 20px;
-    }
-
-    header h1 {
-      font-size: 3rem;
-      margin-bottom: 15px;
-    }
-
-    header p {
-      font-size: 1.2rem;
-      max-width: 700px;
-      margin-bottom: 25px;
-    }
-
-    .btn {
-      display: inline-block;
-      background: #ff5a5f;
-      color: white;
-      padding: 12px 24px;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-
-    .btn:hover {
-      background: #e14b50;
-    }
-
-    nav {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background: white;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      padding: 15px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      z-index: 1000;
-    }
-
-    nav .logo {
-      font-size: 1.4rem;
-      font-weight: bold;
-      color: #ff5a5f;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 20px;
-    }
-
-    nav ul li a {
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-    }
-
-    section {
-      padding: 80px 20px;
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    .section-title {
-      text-align: center;
-      font-size: 2rem;
-      margin-bottom: 40px;
-      color: #222;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 25px;
-    }
-
-    .card {
-      background: white;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    }
-
-    .card img {
-      width: 100%;
-      height: 220px;
-      object-fit: cover;
-    }
-
-    .card-content {
-      padding: 20px;
-    }
-
-    .card-content h3 {
-      margin-bottom: 10px;
-      color: #222;
-    }
-
-    .about,
-    .contact {
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-      padding: 40px;
-    }
-
-    .contact form {
-      display: grid;
-      gap: 15px;
-    }
-
-    .contact input,
-    .contact textarea {
-      width: 100%;
-      padding: 12px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-    }
-
-    .contact button {
-      border: none;
-      cursor: pointer;
-    }
-
-    footer {
-      background: #222;
-      color: white;
-      text-align: center;
-      padding: 25px 15px;
-      margin-top: 40px;
-    }
-
-    @media (max-width: 768px) {
-      nav {
-        flex-direction: column;
-        gap: 10px;
-        padding: 15px 20px;
-      }
-
-      header h1 {
-        font-size: 2.2rem;
-      }
-
-      header p {
-        font-size: 1rem;
-      }
-    }
-  </style>
+    <title>Mimi Auto Company</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #111;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            background: url('https://images.unsplash.com/photo-1503376780353-7e6692767b70') no-repeat center/cover;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        .section {
+            padding: 40px;
+            text-align: center;
+        }
+        .cars {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .car {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 200px;
+        }
+        footer {
+            background-color: #111;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
 </head>
 <body>
 
-  <nav>
-    <div class="logo">Bienvenue Stay France</div>
-    <ul>
-      <li><a href="#homes">Homes</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+<header>
+    <h1>Mimi Auto Company</h1>
+    <p>Your trusted partner for quality vehicles</p>
+</header>
 
-  <header>
-    <h1>Experience the Charm of France</h1>
-    <p>
-      Cozy city apartments, elegant holiday homes, and unforgettable stays across France.
-      Perfect for travelers looking for comfort, style, and local experiences.
-    </p>
-    <a href="#homes" class="btn">Explore Homes</a>
-  </header>
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Inventory</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+</nav>
 
-  <section id="homes">
-    <h2 class="section-title">Featured Stays</h2>
-    <div class="cards">
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80" alt="Paris apartment">
-        <div class="card-content">
-          <h3>Paris City Apartment</h3>
-          <p>Modern and stylish apartment in the heart of Paris, close to cafés, museums, and iconic landmarks.</p>
+<div class="hero">
+    <h2>Drive Your Dream Car Today</h2>
+    <p>Affordable. Reliable. Stylish.</p>
+</div>
+
+<div class="section">
+    <h2>Our Featured Cars</h2>
+    <div class="cars">
+        <div class="car">
+            <h3>Luxury Sedan</h3>
+            <p>Comfort and performance combined</p>
         </div>
-      </div>
-
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=900&q=80" alt="French countryside villa">
-        <div class="card-content">
-          <h3>Provence Countryside Villa</h3>
-          <p>Relax in a peaceful villa surrounded by lavender fields, sunshine, and the beauty of southern France.</p>
+        <div class="car">
+            <h3>Sport Coupe</h3>
+            <p>Speed and style for thrill seekers</p>
         </div>
-      </div>
-
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=900&q=80" alt="Nice seaside home">
-        <div class="card-content">
-          <h3>Nice Seaside Escape</h3>
-          <p>Enjoy a sunny coastal stay with sea views, local markets, and quick access to the French Riviera.</p>
+        <div class="car">
+            <h3>Family SUV</h3>
+            <p>Space and safety for your family</p>
         </div>
-      </div>
     </div>
-  </section>
+</div>
 
-  <section id="about">
-    <h2 class="section-title">About Us</h2>
-    <div class="about">
-      <p>
-        At <strong>Bienvenue Stay France</strong>, we help guests discover beautiful homes and authentic stays across France.
-        Whether you are visiting for a romantic weekend in Paris, a family holiday in Provence, or a beach getaway in Nice,
-        we make your stay easy, welcoming, and memorable.
-      </p>
-      <br>
-      <p>
-        Our focus is simple: clean homes, great locations, quick communication, and a true French hospitality experience.
-      </p>
-    </div>
-  </section>
+<div class="section">
+    <h2>Why Choose Us?</h2>
+    <p>✔ Quality inspected vehicles</p>
+    <p>✔ Affordable pricing</p>
+    <p>✔ Excellent customer service</p>
+</div>
 
-  <section id="contact">
-    <h2 class="section-title">Contact Us</h2>
-    <div class="contact">
-      <form>
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea rows="5" placeholder="Tell us about your stay or property..." required></textarea>
-        <button type="submit" class="btn">Send Message</button>
-      </form>
-    </div>
-  </section>
-
-  <footer>
-    <p>&copy; 2026 Bienvenue Stay France. All rights reserved.</p>
-  </footer>
+<footer>
+    <p>© 2026 Mimi Auto Company | All Rights Reserved</p>
+</footer>
 
 </body>
 </html>
